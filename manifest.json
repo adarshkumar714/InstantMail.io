@@ -9,6 +9,9 @@
     "permissions": [
       "activeTab"
     ],
+    "icons": {
+        "256": "logos/logo.png"
+    },
     "content_scripts": [
       {
         "matches": [

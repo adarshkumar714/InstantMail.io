@@ -19,9 +19,25 @@ html{
     /* box-shadow: inset 0px 0px 6px rgb(73 152 214 / 70%); */
     /* box-shadow: inset 0px 0px 6px rgb(214 73 73 / 70%) */
 }
-h1{
+.title{
     height: 20%;
     width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center; 
+    gap: 20px;
+    padding: 10px 0;
+    padding-left: 24px;
+}
+.title *{
+    height: 90%;
+}
+.title img{
+    border-radius: 50%;
+}
+h1{
+    /* height: 20%;
+    width: 100%; */
     display: flex;
     justify-content: center;
     align-items: center;
