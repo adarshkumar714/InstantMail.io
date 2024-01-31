@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "InstantMail.io",
+    "version": "1.0",
+    "description": "Mail anything instantly.",
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "permissions": [
+      "activeTab"
+    ],
+    "content_scripts": [
+      {
+        "matches": [
+          "<all_urls>"
+        ],
+        "js": [
+          "content.js"
+        ]
+      }
+    ]
+  }
