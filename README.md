@@ -8,7 +8,7 @@ Mail anything you want instantly to any email address.
 git clone git@github.com:adarshkumar714/InstantMail.io
 ```
 * In your chrome browser, go to `chrome://extensions`
-* Turn on Developer Mode on to right corner
+* Turn on Developer Mode on top right corner
 * Load Package
 * Select this projects directory
 * Pin the extension
