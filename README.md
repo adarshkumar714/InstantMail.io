@@ -1,5 +1,8 @@
+<div style='display:flex;justify-content:center;'>
+<img src='logos/logo.png' height='300px' style='border-radius:50%;'> <br>
+</div>
+
 # InstantMail.io
-<img src='logos/logo.png' height='300px'> <br>
 Welcome to InstantMail.io! <br>
 Mail anything you want instantly to any email address.
 
