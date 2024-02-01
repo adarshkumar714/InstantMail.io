@@ -1,29 +1,25 @@
-html{
-    /* border-radius: 10px; */
-}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 .root{
     height: 400px;
     width: 500px;
-    background-color: #0b2943;
-    color: #5555d5;
+    color: #01a1e6;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* border-radius: 10px; */
-    /* box-shadow: inset 0px 0px 6px rgb(73 152 214 / 70%); */
-    /* box-shadow: inset 0px 0px 6px rgb(214 73 73 / 70%) */
+    background: #ffffff;
 }
 .title{
     height: 20%;
     width: 100%;
     display: flex;
-    /* justify-content: center; */
     align-items: center; 
     gap: 20px;
     padding: 10px 0;
@@ -36,8 +32,6 @@ html{
     border-radius: 50%;
 }
 h1{
-    /* height: 20%;
-    width: 100%; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,14 +52,11 @@ form{
 textarea{
     height: 74%;
     width: 90%;
-    background-color: #0b2943;
-    /* box-shadow: 0px 0px 8px rgb(73 152 214 / 70%); */
-    border: none;
     outline: none;
     padding: 10px;
-    border-radius: 6px;
-    color: #c1c1c1;
-    border: 1px solid #6b6b6b;
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+    resize: vertical;
 }
 .container2{
     height: 10%;
@@ -76,25 +67,24 @@ textarea{
 }
 .container2 *{
     height: 100%;
-    border-radius: 6px;
-    color: #c1c1c1;
 }
 .container2 input{
     width: 70%;
-    border: none;
     outline: none;
-    background: #252525;
-    /* box-shadow: 0px 0px 8px rgb(191 191 191 / 70%); */
     padding-left: 10px;
-    border: 1px solid #4b3f3f;
+    border: 1px solid #ccc;
+    background: #f9f9f9;
 }
 .container2 button{
-    width: 25%;
+    width: 25%;    
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
     border: none;
-    background-color: #0b2943;
-    color: #326995;
-    font-size: 18px;
-    box-shadow: 0px 0px 8px rgb(73 152 214 / 42%);
-    border: 1px solid #80808069;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #0056b3; /* Darker on hover for interaction */
 }
 
