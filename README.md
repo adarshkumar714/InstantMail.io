@@ -1,8 +1,9 @@
 # InstantMail.io
-Welcome to InstantMail.io!
+<img src='logos/logo.png'>
+Welcome to InstantMail.io! <br>
 Mail anything you want instantly to any email address.
 
-### Quick Start
+## Quick Start
 * Clone this project
 ```sh
 git clone git@github.com:adarshkumar714/InstantMail.io
