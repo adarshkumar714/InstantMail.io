@@ -1,5 +1,5 @@
 # InstantMail.io
-<img src='logos/logo.png'>
+<img src='logos/logo.png' height='300px'> <br>
 Welcome to InstantMail.io! <br>
 Mail anything you want instantly to any email address.
 
