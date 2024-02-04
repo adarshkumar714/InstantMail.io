@@ -1,4 +1,5 @@
 const express = require('express')
+const multer = require('multer')
 // const cors = require('cors');
 const { sendMail } = require('./mailer')
 
@@ -20,6 +21,29 @@ app.post('/', (req, res)=>{
     sendMail(data);
     res.send('<h1>mail sent</h1>');
 })
+
+// file share
+// Set storage engine
+const storage = multer.diskStorage({
+    destination: './uploads/',
+    filename: function(req, file, cb) {
+        cb(null, file.fieldname + '-' + Date.now() + file.originalname);
+    }
+});
+
+// Init upload
+const upload = multer({ storage: storage });
+
+app.use(express.static('.')); // Serve static files from root directory
+
+app.use((req, res, next)=>{
+    console.log('Uploading file...');
+    next();
+})
+
+app.post('/upload', upload.single('file'), (req, res) => {
+    res.send('File uploaded successfully');
+});
 
 app.use((req, res)=>{
     res.status(404).send({
