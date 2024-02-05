@@ -16,6 +16,11 @@ dotenv.config()
 app.use(express.urlencoded())
 app.use(express.json())
 
+app.use((req, res)=>{
+    console.log(req.ip);
+    res.send('home');
+})
+
 app.post('/', (req, res)=>{
     let data = req.body;
     sendMail(data);
