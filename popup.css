@@ -57,6 +57,8 @@ textarea{
     border: 1px solid #ccc;
     background: #f9f9f9;
     resize: vertical;
+    min-height: 40px;
+    max-height: 80%;
 }
 .container2{
     height: 10%;
